@@ -176,7 +176,7 @@ Body (JSON):
 ````
 📸 Screenshot POST Data SOA
 
-![POST SOA Data](foto/21.postsoadata.png)
+![POST SOA Data](foto/21.possoadata.png)
 
 📌 Kesimpulan
 -->SOA memungkinkan pemisahan fungsi sistem menjadi service yang berdiri sendiri
