@@ -83,7 +83,7 @@ Jika login berhasil, server akan mengembalikan JWT Token.
 Jika gagal, server akan mengembalikan status 401 Unauthorized.
 
 📸 Screenshot:
-foto/18.soalogin.png
+![Login SOA](foto/18.soalogin.png)
 
 📦 Data Service (data-service)
 1️⃣ Konfigurasi .env
@@ -113,14 +113,15 @@ Memverifikasi token JWT
 Menolak request tanpa token atau token tidak valid
 
 🔎 Pengujian Menggunakan Postman
-🔹 1. Login
 
+🔹 1. Login
 POST 
 ````bash
 http://localhost:4000/login
 ````
+📸 Screenshot Login SOA
 
-📸 Screenshot: foto/18.soalogin.png
+![Login SOA](foto/18.soalogin.png)
 
 🔹 2. Akses Data Tanpa Authorization
 GET 
@@ -132,7 +133,10 @@ Hasil:
 
 ❌ 401 Unauthorized
 
-📸 Screenshot: foto/19.getsoadatanoauth.png
+📸 Screenshot GET Data Tanpa Authorization
+
+![GET SOA No Auth](foto/19.getsoadatanoauth.png)
+
 
 🔹 3. Akses Data Dengan Authorization
 GET 
@@ -149,7 +153,10 @@ Hasil:
 
 ✅ 200 OK
 
-📸 Screenshot: foto/20.getsoadataauth.png
+📸 Screenshot GET Data Dengan Authorization
+
+![GET SOA Auth](foto/20.getsoadataauth.png)
+
 
 🔹 4. Tambah Data
 POST http://localhost:5000/data
@@ -167,14 +174,15 @@ Body (JSON):
   "name": "Data Rahasia C"
 }
 ````
+📸 Screenshot POST Data SOA
 
-📸 Screenshot: foto/21.postsoadata.png
+![POST SOA Data](foto/21.postsoadata.png)
 
 📌 Kesimpulan
-SOA memungkinkan pemisahan fungsi sistem menjadi service yang berdiri sendiri
+-->SOA memungkinkan pemisahan fungsi sistem menjadi service yang berdiri sendiri
 
-Authentication dan Data Service berjalan terpisah namun saling terhubung
+-->Authentication dan Data Service berjalan terpisah namun saling terhubung
 
-JWT digunakan sebagai mekanisme keamanan
+-->JWT digunakan sebagai mekanisme keamanan
 
-Data Service tidak dapat diakses tanpa autentikasi
+-->Data Service tidak dapat diakses tanpa autentikasi
